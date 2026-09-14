@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+All types of HTML form input fields
+</title>
+</head>
+<body>
+<form>
+<!-- There are 22 types of input tags:
+button – A push button with no default behavior.
+checkbox – A box that can be checked or unchecked.
+color – A color picker control.
+date – A date picker for selecting a date (year, month, day).
+datetime-local – A date and time picker without time zone.
+email – An email address field with validation.
+file – A file upload control.
+hidden – A hidden input (not visible to the user).
+image – An image button for form submission.
+month – A month picker (year and month).
+number – A numeric input field.
+password – A password field (characters masked).
+radio – A radio button for selecting one option from a set.
+range – A slider control for selecting a value in a range.
+reset – A button to reset form fields to default values.
+search – A search field.
+submit – A button to submit the form.
+tel – A telephone number field.
+text – A single-line text field (default type).
+time – A time picker (hours and minutes).
+url – A URL field with validation.
+week – A week picker (week number and year).
+-->
+<h1>Google AI made examples of all input tag types!</h1>
+
+<!-- TEXT & AUTHENTICATION INPUTS -->
+
+<!-- Text: Default single-line text -->
+<label for="username">Username:</label>
+<input type="text" id="username" placeholder="e.g., janesmith">
+<br><br>
+<!-- Password: Obscures typed characters -->
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" placeholder="Min 9 characters" required>
+<label for="pwd">I've forgotten this password</label>
+<br><br>
+<!-- Email: Validates for format @... -->
+<label for="user-email">Email:</label>
+<input type="email" id="user-email" placeholder="name@example.com">
+<br><br>
+<!-- Tel: Triggers phone keypad on mobile -->
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+<br><br>
+<!-- URL: Validates for a web address -->
+<label for="website">Website:</label>
+<input type="url" id="website" name="website" placeholder="https://example.com">
+<br><br>
+<hr width="100%" color="#0066cc">
+<h3>Free animated .svg giveaway!</h3>
+<!-- Search: Tailored for search queries (often adds a clear button) -->
+<label for="site-search">Search by topic:</label>
+<input type="search" id="site-search" name="site-search">
+
+<!-- NUMERIC & SELECTION CONTROLS -->
+
+<!-- Number: Restricts to digits; includes stepper arrows -->
+<label for="quantity">Show (quantity, 1-10):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="10">
+<br><br>
+<!-- Range: Slider bar control -->
+<label for="related">Relatedness:</label>
+<input type="range" id="related" min="0" max="100">
+<br><br>
+<!-- Checkbox: Multi-select option -->
+<input type="checkbox" id="subscribe" value="newsletter">
+<label for="subscribe">Subscribe to newsletter</label>
+<br>
+<input type="checkbox" id="subscribe" value="newsletter">
+<label for="subscribe">Subscribe to adds</label>
+<br>
+<!-- Radio: Single-select option within a shared 'name' group -->
+<p>Choose a size:</p>
+<input type="radio" id="small" name="size" value="s">
+<label for="small">Small</label>
+<input type="radio" id="large" name="size" value="l">
+<label for="large">Large</label>
+<br><br>
+<!-- Color: Native OS color picker -->
+<label for="theme-color">Choose theme color:</label>
+<input type="color" id="theme-color" name="theme-color" value="#0066cc">
+<!-- Firefox-ā nestrādā default value (rāda sarkano). -->
+<br>
+<hr width="100%" color="#0066cc">
+<!-- DATE & TIME PICKERS -->
+
+<!-- Date: Year, month, and day picker -->
+<h3>customer Info:</h3>
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+<br><br>
+<!-- Time: Hour and minute picker -->
+<label for="alarm">Set Alarm:</label>
+<input type="time" id="alarm" name="alarm">
+<br><br>
+<!-- Datetime-local: Date and time without timezone -->
+<label for="meeting">Meeting Time:</label>
+<input type="datetime-local" id="meeting" name="meeting">
+<br><br>
+<!-- Month: Year and month picker -->
+<label for="expiry">Card Expiry:</label>
+<input type="month" id="expiry" name="expiry">
+<br><br>
+<!-- Week: Year and week-number picker -->
+<label for="vacation">Vacation Week:</label>
+<input type="week" id="vacation" name="vacation">
+<br><br>
+<!-- BUTTONS & FORM ACTIONS -->
+
+<!-- Button: Generic button for JavaScript actions -->
+<input type="button" value="Click Me" onclick="alert('Hello!')">
+<!-- Submit: Sends form data to the server -->
+<input type="submit" value="Send Form">
+<!-- Reset: Resets all form fields to default values -->
+<input type="reset" value="Clear All">
+<br><br>
+<!-- Image: Submits the form using a picture instead of text -->
+<input type="image" src="submit-button.png" alt="Submit">
+<br>
+<br>
+<hr width="100%" color="#0066cc">
+
+<!-- BEHIND-THE-SCENES & UPLOADS -->
+
+<!-- File: Local file uploader -->
+<label for="avatar">Upload Profile Picture:</label>
+<input type="file" id="avatar" name="avatar" accept="image/*">
+<br>
+<!-- Hidden: Transmits hidden data to the backend -->
+<input type="hidden" id="user-id" value="98765">
+<br>
+
+<!-- additional -->
+<label for="browser-choice">Choose a web browser (or type your own):</label>
+<!-- The list attribute connects this input to the datalist below -->
+<input type="text" id="browser-choice" list="browsers-list" placeholder="Start typing...">
+<br>
+<!-- The id attribute must match the input's list attribute -->
+<datalist id="browsers-list">
+  <option value="Google Chrome">
+  <option value="Mozilla Firefox">
+  <option value="Safari">
+  <option value="Microsoft Edge">
+  <option value="Opera">
+</datalist>
+<!-- Firefox-ā jāklikšķina divas reizes -->
+<hr width="100%" color="#0066cc">
+
+<!-- text -->
+<h2>Why &lt;label&gt;?</h2>
+<p>
+The HTML &lt;label&gt; tag is used to provide a text explanation for form controls (like text boxes, checkboxes, or radio buttons) while drastically improving accessibility and usability.<i>(cit. pēc W3Schools)</i>
+</p>
+<p>
+Google explained:<br><br>
+<h3>Why We Use It (The 3 Main Benefits)</h3>
+</p>
+<ol>
+<li>
+Larger Clickable Target (Usability): If you don't use a &lt;label&gt;, the user has to click precisely on the tiny checkbox square to toggle it. By wrapping or linking the text with a &lt;label&gt;, clicking anywhere on the words "I agree to the terms and conditions" will automatically check or uncheck the box. This is incredibly useful on mobile screens.</li>
+<li>Screen Reader Support (Accessibility): Visually impaired users rely on assistive technologies to navigate web forms. When a screen reader focuses on the checkbox, it looks for the linked &lt;label&gt; and reads aloud: "I agree to the terms and conditions, checkbox". Without the label, the screen reader might just say "checkbox, unselected," leaving the user with no idea what they are agreeing to.</li>
+<li>Focus: For text inputs (like an email or password field), clicking on the label text immediately snaps the typing cursor inside the text box so the user can start typing right away.
+</li>
+</ol>
+</form>
+</body>
+</html>
