@@ -1,0 +1,181 @@
+/* Darba autors: Jekaterina Tarhanova, 12. grupa
+Uzdevums: CSS 1. daļa _pamati */
+
+/* 1.–2. CSS sintakse, body un komentāri */
+body {
+   color: #002233;
+   background-color: #d0dffd;
+   text-align: justify;
+   font-family: Arial, sans-serif;
+   line-height: 1.5;
+}
+
+/* 3. Elementa selektori: h1, h2, p, a ... */
+h1 {
+   font-size: 1.8rem; /* 1.8 reizes lielāks par bāzes fonta izmēru; relatīvā mērvienība, kas ļauj veidot web-lapu adaptīvo dizainu */
+   text-align: left;
+   font-weight: 800;
+   color: #006622;
+}
+h2 {
+   font-size: 1.6rem; /* 1.6 reizes lielāks par bāzes fonta izmēru; relatīvā mērvienība, kas ļauj veidot web-lapu adaptīvo dizainu */
+   text-align: left;
+   font-weight: 700;
+   color: #662266;
+}
+nav {
+   height: 10vh; /* Vienmēr precīzi 10% no ekrāna augstuma; relatīva mērvienība, kas ļauj pielāgoties lietotāja ekrana izmēriem */
+}
+p {
+   font-size: 14pt; /* 14 punktu lielums; absolūtā mērvienība, kas ļauj precīzi noteikt fonta izmēru */
+}
+a {
+   color: #228822;
+   text-decoration: none;
+}
+/* 4. class selektori: .subtitle, .important, .card, .tag ... */
+.important {
+   background-image: linear-gradient(to right, #002233, #3d67a0);
+   color: yellow;
+   font-weight: 700;
+   font-style: italic;
+   width: 60vw; /* Elements vienmēr aizpildīs 60% no ekrāna platuma; relatīvā mērvienība, kas ļauj pielāgoties lietotāja ekrana izmēriem */
+}
+.subtitle {
+   font-size: 1.2rem; /* 1.2 reizes lielāks par bāzes fonta izmēru; relatīvā mērvienība, kas ļauj veidot web-lapu adaptīvo dizainu */
+   font-style: italic;
+   text-transform: capitalize;
+}
+.card {
+   background-color: #ffffee;
+}
+.tag {
+   background-color: #be9;
+   border-radius: 0.25em; /* Noapaļoti stūri */
+   border: 1px dotted #006622; /* Punkta līnija; 1px - absolūta mērvienība, ļauj precīzi noteikt malas izmēru */
+   padding: 0.5em 1em; /* atstarpes no elementa robežām - augšā/apakšā un sānos; em ir relatīvā mērvienība */
+}
+
+/* 5. id selektors: #main-title */
+#main-title {
+   color: #006622;
+   font-size: 2rem; /* 2 reizes lielāks par bāzes fonta izmēru; relatīvā mērvienība, kas ļauj veidot web-lapu adaptīvo dizainu */
+   text-align: center;
+   letter-spacing: 0.05rem; /* Burta atstarpes; rem ir relatīvā mērvienība, kas ļauj veidot web-lapu adaptīvo dizainu */
+}
+
+/* 6. Universālais (*) un grupēšanas selektors */
+* {
+   font-size: 16pt; /* 16 punktu lielums; absolūtā mērvienība, kas ļauj precīzi noteikt fonta izmēru */
+   box-sizing: border-box;
+}
+h1, h2, h3 {
+   font-style: oblique;
+   letter-spacing: 0.05rem; /* Burta atstarpes; rem ir relatīvā mērvienība, kas ļauj veidot web-lapu adaptīvo dizainu */
+   font-variant: small-caps;
+}
+
+/* 7. Pēcnācēja un tiešā bērna selektori */
+nav a {
+   background-color: #ffffee;
+   border-radius: 0.25em;
+   border-color: #ddddcc;
+   padding: 0.5em 1em;
+   text-decoration: none;
+}
+.selector-demo > p {
+   font-size: 14pt;
+   font-family:'Courier New', Courier, monospace;
+   font-weight: 500;
+}
+section p {
+   font-family:'Courier New', Courier, monospace;
+   font-weight: 400;
+}
+.selector-demo .nested p {
+   font-size: 10pt;
+   font-family:'Verdana', Arial, Helvetica, sans-serif;
+   font-weight: 200;
+}
+
+/* 8. Krāsu pieraksti: name, HEX, RGB, RGBA */
+.color-name {
+   color: darkblue;
+}
+.color-hex {
+   color:#002277;
+}
+.color-rgb { 
+   color: rgb(0, 34, 119);
+}
+.color-rgba {
+   color: rgba(0, 16, 80, 0.75);
+}
+
+/* 9. Foni: background-color, background-image / gradient */
+.background-demo {
+   background-color: #cce;
+   max-width: 60%; /* Elements aizpildīs ne vairāk kā 60% no ekrāna platuma; relatīvā mērvienība, kas ļauj pielāgoties lietotāja ekrana izmēriem */
+}
+.hero {
+   background-image: linear-gradient(to right, yellowgreen, #4f81bd);
+}
+.savs_attels {
+   background-image: url("./flower.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 20vh; /* Elements aizpildīs 20% no ekrāna augstuma; relatīvā mērvienība, kas ļauj pielāgoties lietotāja ekrana izmēriem */
+}
+/* 10. Teksts un fonti */
+.normal-text {
+   /* Parasts teksts teksta īpašību izmēģināšanai. */
+   text-emphasis: triangle yellowgreen;
+  em, rem, vw un vh
+}
+.italic-text {
+   /* Šo rindkopu vari noformēt slīprakstā. */
+   font-style: italic;
+}
+.uppercase-text {
+   /* Šim tekstam izmēģini text-transform. */
+   text-transform: capitalize;
+}
+.uppercase-text + a {
+   /* Saite text-decoration izmēģināšanai */
+   text-decoration: none;
+}
+
+/* 11. Mērvienības: px, %, em, rem, vw, vh */
+/* Skat.  visos punktos, visas izmantotas */
+
+/* 12. width, height, min/max-width, min/max-height */
+.size-box {
+   width: 75%; /* Elements aizpildīs 75% no ekrāna platuma; relatīvā mērvienība, kas ļauj pielāgoties lietotāja ekrana izmēriem */
+   max-width: 80%; /* Elements aizpildīs ne vairāk kā 80% no ekrāna platuma; relatīvā mērvienība, kas ļauj pielāgoties lietotāja ekrāna izmēriem */
+   min-height: 100px; /* Elements aizpildīs ne mazāk kā 100 pikseļus; absolūtā mērvienība, kas ļauj precīzi noteikt elementa augstumu */
+   background-color:rgb(191, 252, 0);
+   color:#002233;
+}
+main {
+    width: 90%; /* Elements aizpildīs 90% no ekrāna platuma; relatīvā mērvienība, kas ļauj pielāgoties lietotāja ekrana izmēriem */
+    max-width: 1000px; /* Elements aizpildīs ne vairāk kā 1000 pikseļus; absolūtā mērvienība, kas ļauj precīzi noteikt elementa platumu */
+}
+
+/* 13. Noslēguma noformējums */
+
+/* 
+Izmanto vienu un to pašu HTML šablonu un izveido pilnībā noformētu lapu tikai ar tēmām, kas apskatītas CSS 1. daļā.
+Uzdevums izpildīts failos CSS_1_uzdevums.html un styles.css (GitHub vietnē https://github.com/yekiormpv/web-dev).
+•	Ārējais style.css fails ir korekti pieslēgts. - IR
+•	Izmantots elementa, class un id selektors. - IR
+•	Izmantots universālais vai grupēšanas selektors. - IR
+•	Izmantots pēcnācēja un tiešā bērna selektors. -IR
+•	Izmantoti vismaz trīs dažādi krāsu pieraksta veidi. - IR
+•	Ir noformēts lapas fons un vismaz vienas sadaļas fons. -IR
+•	Izmantotas vismaz sešas teksta/fontu īpašības. -IR
+•	Izmantotas vismaz trīs dažādas CSS mērvienības. -IR
+•	Izmantots width kopā ar max-width vai min/max-height. -IR
+•	CSS failā ir vismaz trīs paskaidrojoši komentāri. -IR
+*/
+
+
