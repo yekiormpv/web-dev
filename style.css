@@ -1,0 +1,130 @@
+/* ==========================================================
+   CSS 1. daļa — uzdevumu fails
+   Raksti CSS zem atbilstošajām sadaļām.
+   ========================================================== */
+
+/* 1.–2. CSS sintakse, body un komentāri */
+* {
+   font-size: 12pt;
+   font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+body {
+   color: #ffffee;
+   line-height: 1.5;
+   background-image: linear-gradient(to right, #17365d, #4d78b0);
+}
+
+/* 3. Elementa selektori: h1, h2, p, a ... */
+h1 {
+   font-size: 2rem;
+   text-align: center;
+   letter-spacing: 1px;
+   font-weight: 800;
+   font-style: italic ;
+}
+h2 {
+   font-size: 1.6rem;
+   text-align: left;
+   font-style: oblique;
+}
+nav {
+   height: 10vh; /* Vienmēr precīzi 10% no ekrāna augstuma */
+}
+nav a {
+   background-color: #ffffee;
+   color:  #17365d;
+   border-radius: 0.25em;
+   border-color: #ddddcc;
+   padding: 0.5em 1em; /* Augšā/apakšā un sānos */
+   text-decoration: none;
+}
+a {
+   color: yellow;
+}
+/* 4. class selektori: .subtitle, .important, .card, .tag ... */
+.important {
+   background-image: linear-gradient(to right, #002233, #3d67a0);
+   color: yellowgreen;
+   font-style: oblique;
+}
+
+/* 5. id selektors: #main-title */
+#sixth_font_feature {
+   font-variant: small-caps;
+}
+#main-title {
+   font-variant: small-caps;
+}
+
+/* 6. Universālais (*) un grupēšanas selektors */
+/* Universālo selektoru skat. faila augšā (tas ir '*').
+
+/* 7. Pēcnācēja un tiešā bērna selektori */
+section > p {
+   font-size: 14pt;
+   font-family:'Courier New', Courier, monospace;
+   font-weight: 500;
+}
+section p {
+   font-family:'Courier New', Courier, monospace;
+   font-weight: 400;
+}
+/* 8. Krāsu pieraksti: name, HEX, RGB, RGBA */
+.color-name {
+   color: yellowgreen;
+}
+.color-hex {
+   color: #aaee00;
+}
+.color-rgb {
+   color: rgb(191, 252, 0);
+}
+.color-rgba {
+   color: rgba(152, 252, 0, 0.5);
+   background-color: #001122; /* lai būtu redzams teksts */
+   width: 60vw; /* Elements vienmēr aizpildīs pilnu ekrāna platumu */
+}
+
+/* 9. Foni: background-color, background-image / gradient */
+.background-demo {
+   background-color: #001122;
+   max-width: 60%;
+}
+
+/* 10. Teksts un fonti */
+.normal-text {
+   /* Parasts teksts teksta īpašību izmēģināšanai. */
+   text-emphasis: triangle yellowgreen;
+  em, rem, vw un vh
+}
+.italic-text {
+   /* Šo rindkopu vari noformēt slīprakstā. */
+   font-style: italic;
+}
+.uppercase-text {
+   /* Šim tekstam izmēģini text-transform. */
+   text-transform: capitalize;
+}
+.uppercase-text + a {
+   /* Saite text-decoration izmēģināšanai */
+   text-decoration: none;
+}
+
+/* 11. Mērvienības: px, %, em, rem, vw, vh */
+/* Skat.  visos punktos */
+
+/* 12. width, height, min/max-width, min/max-height */
+.size-box {
+   width: 50%;
+   max-width: 75%;
+   height: 5%;
+   max-height: 10%;
+   background-color:rgb(191, 252, 0);
+   color:#002233;
+}
+
+/* 13. Noslēguma noformējums */
+#sixth_font_feature {
+   font-variant: small-caps;
+}
+
